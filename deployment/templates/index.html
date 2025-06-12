@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediksi Teks</title>
+</head>
+<body>
+    <h2>Form Klasifikasi Teks</h2>
+    <form method="post">
+        <textarea name="text" rows="4" cols="50" placeholder="Masukkan teks di sini..."></textarea><br>
+        <input type="submit" value="Prediksi">
+    </form>
+    {% if prediction is not none %}
+        <h3>Hasil Prediksi: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
